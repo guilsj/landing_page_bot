@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+:root {
+    /* fonts */
+    --font-principal: 'Sarala', sans-serif;
+    --font-secundaria: 'Righteous', sans-serif;
+    /* cores */
+    --cor-primaria: #FFF2E7;
+    --cor-secundaria: #ECD6C4;
+    --cor-fundo-1: #2F2325;
+    --cor-fundo-2: #8E5D52;
+}
+
+body {
+    background-image: linear-gradient(to top right, var(--cor-fundo-1) 0, var(--cor-fundo-2) 100%);
+    background-repeat: no-repeat;
+    font-family: var(--font-principal);
+    font-size: 1.125rem;
+    color: var(--cor-primaria);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal__primaria {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.primraia__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 4rem;
+}
+
+.primaria__subtitulo {
+    font-size: 1.5rem;
+    margin: 2em 0;
+}
+
+.primaria__botao {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: var(--cor-fundo-1);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.principal__secundaria {
+    width: 100vw;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 3em;
+}
+
+.secundaria__titulo {
+    display: inline-block;
+    border-top: 1px solid;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    padding-top: 60px;
+    margin: 2em 0;
+}
+
+.secundaria__container__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 40px;
+}
+
+.rodape__imagem {
+    margin: 20px;
+}
+
+@media (max-width: 1024px) {
+    .principal__primaria {
+        flex-direction: column-reverse;
+    }
+
+    .principal__primaria {
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
